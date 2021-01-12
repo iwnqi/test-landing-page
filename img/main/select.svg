@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 5" width="6" height="5">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ff8500 } 
+	</style>
+	<g id="top">
+		<g id="form">
+			<g id="Tabs">
+				<g id="Tab 2">
+					<g id="марка">
+						<path id="Shape 8 copy" class="shp0" d="M3 5L0 0L6 0L3 5" />
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

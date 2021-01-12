@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Wezom Agency</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="popUpBackground" id="popUpBackground">
+      <div class="enterPopUp popUpWindow" id="enterPopUp">
+        <form class="enterWithAcc">
+          <p>Вход в личный кабинет</p>
+          <span>Ваш email</span>
+          <input
+            class="enterWithAccInput"
+            type="email"
+            placeholder="mikel_ivanov98@gmail.com"
+          />
+          <span>Пароль</span>
+          <input
+            class="enterWithAccInput"
+            type="password"
+            placeholder="*************"
+          />
+          <div class="rememberMe">
+            <input id="remember" type="checkbox" />
+            <label for="remember"> Запомнить меня</label>
+          </div>
+          <div class="enterHelp">
+            <a href="">Забыли пароль?</a>
+            <a href="">Регистрация</a>
+          </div>
+          <button type="submit">Войти в личный кабинет</button>
+        </form>
+        <div class="enterWithSocial">
+          <p>Войти с помощью</p>
+          <a href=""><img src="img/footer/soclink3.png" alt="f" />Facebook</a>
+          <a href=""><img src="img/footer/soclink2.png" alt="T" />Twitter</a>
+          <a href=""><img src="img/footer/soclink5.png" alt="G" />Google</a>
+        </div>
+      </div>
+      <div class="callMePopUp popUpWindow" id="callMePopUp">
+        <form class="callMePopUpForm">
+          <p>Перезвоните мне</p>
+          <span>Номер телефона</span>
+          <input
+            id="phone"
+            type="tel"
+            placeholder="+38(0__) ___ - __ - __"
+            required
+            pattern="^(\s*)?\+?[3]?[8]?\(?[0](\s*)?\d{2}\)?(\s*)\d{3}(\s*)?-?(\s*)?\d{2}(\s*)?-?(\s*)?\d{2}(\s*)?$"
+          />
+          <button type="submit">Перезвоните мне</button>
+        </form>
+      </div>
+      <a class="popUpCloser" id="popUpCloser">
+        <img id="popUpCloserInner" src="img/main/x.png" alt="x" />
+      </a>
+    </div>
+    <div class="headerOuter">
+      <header>
+        <nav>
+          <div class="navInner">
+            <a href="" class="mainA mainA1"> Главная </a>
+            <a class="mainA mainA2">О компании</a>
+            <a
+              class="mainA mainA3"
+              data-media="520px"
+              data-action="headerNavLinks"
+              id="mainA3"
+            >
+              ссылки
+              <img src="img/header/headerMenu.png" alt="menu" />
+            </a>
+            <div class="headerNavLinks" id="headerNavLinks">
+              <a href=""> О компании </a>
+              <a href=""> ccылка 1 </a>
+              <a href=""> ссылка 2 </a>
+              <a href=""> ссылка 3 </a>
+            </div>
+            <div class="headerNavLinks2">
+              <a href=""> ccылка 1 </a>
+              <a href=""> ссылка 2 </a>
+              <a href=""> ссылка 3 </a>
+            </div>
+          </div>
+          <a data-btn="enterPopUp" class="enter popUpBtn">
+            <img src="img/header/enter.png" alt="login" />ВХОД</a
+          >
+        </nav>
+      </header>
+    </div>
+    <nav class="headerNav">
+      <div class="headerNavInner">
+        <div class="logo">
+          <img src="img/header/test.png" alt="test" />
+        </div>
+        <div class="call">
+          <p class="number">+380 98 170 00 740</p>
+
+          <p class="number">+380 98 170 00 740</p>
+
+          <a data-btn="callMePopUp" class="callMe popUpBtn">
+            <img src="img/header/call.png" alt="call me" />
+            <span>Перезвонить мне</span>
+          </a>
+        </div>
+        <div class="btns">
+          <a href="" class="btnsInner">
+            <img id="compare" src="img/header/compare.png" alt="compare" />
+            <span class="caption">сравнение</span>
+          </a>
+          <a href="" class="btnsInner">
+            <img id="favorite" src="img/header/favorite.png" alt="favorite" />
+            <span class="caption">избранное</span>
+          </a>
+          <a href="" class="btnsInner">
+            <img
+              class="cartN"
+              src="img/header/digitsBg.png"
+              alt="cart Amount"
+            />
+            <span class="cartN">5</span>
+            <img src="img/header/cart.png" alt="cart" />
+            <span class="caption">корзина</span>
+          </a>
+        </div>
+        <form class="searchMain searchMain2">
+          <input type="search" placeholder="Поиск по сайту" class="search" />
+          <select name="searchCategories" class="searchCategories">
+            <option value="value0" hidden="">Все категории</option>
+            <option value="value1">Значение 1</option>
+            <option value="value2">Значение 2</option>
+          </select>
+          <button type="submit" class="searchStart">ПОИСК</button>
+        </form>
+      </div>
+    </nav>
+    <nav class="navigation">
+      <aside class="menu">
+        <div class="menuHeader">
+          <div class="burger">
+            <img src="img/navigation/burger.png" alt="-" />
+          </div>
+          <p class="menuCaption">Меню</p>
+        </div>
+        <div class="menuLinks" id="menuLinks">
+          <a href="">
+            <span>ссылка 1</span>
+            <img src="img/navigation/menuArrow.png" alt=">"
+          /></a>
+          <a href="">
+            <span>ссылка 2</span>
+            <img src="img/navigation/menuArrow.png" alt=">"
+          /></a>
+          <a href="">
+            <span>ссылка 3</span>
+            <img src="img/navigation/menuArrow.png" alt=">"
+          /></a>
+          <a href="">
+            <span>ссылка 4</span>
+            <img src="img/navigation/menuArrow.png" alt=">"
+          /></a>
+          <a href=""
+            ><span>ссылка 5</span>
+            <img src="img/navigation/menuArrow.png" alt=">"
+          /></a>
+          <a href="">
+            <span>ссылка 6</span>
+            <img src="img/navigation/menuArrow.png" alt=">"
+          /></a>
+          <a href="">
+            <span>ссылка 7</span>
+            <img src="img/navigation/menuArrow.png" alt=">"
+          /></a>
+        </div>
+      </aside>
+      <div class="selection">
+        <form class="searchMain searchMain1">
+          <input type="search" placeholder="Поиск по сайту" class="search" />
+          <select name="searchCategories" class="searchCategories">
+            <option value="value0" hidden="">Все категории</option>
+            <option value="value1">Значение 1</option>
+            <option value="value2">Значение 2</option>
+          </select>
+          <button type="submit" class="searchStart">ПОИСК</button>
+        </form>
+        <div class="selectorMain">
+          <div class="categoriesBackgr">
+            <div class="categories categoriesRuler">
+              <span class="categoriesOuterSpan">Все ссылки</span>
+            </div>
+            <div class="categoriesOuter categoriesOuter1">
+              <a class="categories" href="">
+                <img src='img/navigation/cat1.png' class="cat1 cat">
+                <span>Ссылка 1</span>
+              </a>
+              <a class="categories " href="">
+                <img src='img/navigation/cat2.png' class="cat2 cat">
+                <span>Ссылка 2</span>
+              </a>
+              <a class="categories" href="">
+                <img src='img/navigation/cat3.png' class="cat3 cat">
+                <span>Ссылка 3</span>
+              </a>
+              <a class="categories" href="">
+                <img src='img/navigation/cat4.png' class="cat4 cat"></img>
+                <span>Ссылка 4</span>
+              </a>
+              <a class="categories" href="">
+                <img src='img/navigation/cat5.png' class="cat5 cat"></img>
+                <span>Ссылка 5</span>
+              </a>
+            </div>
+            <div class="categoriesOuter categoriesOuter2">
+              <a class="categories" href="">
+                <img src='img/navigation/cat1.png' class="cat1 cat"></img>
+                <span>Ссылка 1</span>
+              </a>
+              <a class="categories" href="">
+                <img src='img/navigation/cat2.png' class="cat2 cat"></img>
+                <span>Ссылка 2</span>
+              </a>
+              <a class="categories" href="">
+                <img src='img/navigation/cat3.png' class="cat3 cat"></img>
+                <span>Ссылка 3</span>
+              </a>
+              <a class="categories" href="">
+                <img src='img/navigation/cat4.png' class="cat4 cat"></img>
+                <span>Ссылка 4</span>
+              </a>
+              <a class="categories" href="">
+                <img src='img/navigation/cat5.png' class="cat5 cat"></img>
+                <span>Ссылка 5</span>
+              </a>
+            </div>
+          </div>
+          <div class="selectorFilters">
+            <div class="patterns">
+              <button class="pattern" id="pattern1">Tab 1</button>
+              <button class="pattern" id="pattern2">Tab 2</button>
+            </div>
+            <form class="filters">
+              <div class="filterSelectors filterSelector1" id="filterSelector1">
+                <select name="select1">
+                  <option value="none" hidden="">Select 1</option>
+                  <option value="value1">Значение 1</option>
+                  <option value="value2">Значение 2</option>
+                  <option value="value3">Значение 3</option>
+                </select>
+                <select name="select2">
+                  <option value="none" hidden="">Select 2</option>
+                  <option value="value1">Значение 1</option>
+                  <option value="value2">Значение 2</option>
+                  <option value="value3">Значение 3</option>
+                </select>
+                <select name="select3">
+                  <option value="none" hidden="">Select 3</option>
+                  <option value="value1">Значение 1</option>
+                  <option value="value2">Значение 2</option>
+                  <option value="value3">Значение 3</option>
+                </select>
+                <select name="select4">
+                  <option value="none" hidden="">Select 4</option>
+                  <option value="value1">Значение 1</option>
+                  <option value="value2">Значение 2</option>
+                  <option value="value3">Значение 3</option>
+                </select>
+                <select name="select5">
+                  <option value="none" hidden="">Select 5</option>
+                  <option value="value1">Значение 1</option>
+                  <option value="value2">Значение 2</option>
+                  <option value="value3">Значение 3</option>
+                </select>
+                <select name="select6">
+                  <option value="none" hidden="">Select 6</option>
+                  <option value="value1">Значение 1</option>
+                  <option value="value2">Значение 2</option>
+                  <option value="value3">Значение 3</option>
+                </select>
+                <select name="select7">
+                  <option value="none" hidden="">Select 7</option>
+                  <option value="value1">Значение 1</option>
+                  <option value="value2">Значение 2</option>
+                  <option value="value3">Значение 3</option>
+                </select>
+                <div class="cost">
+                  <span>Цена</span>
+                  <input type="text" placeholder="50" />
+                  <input type="text" placeholder="250000" />
+                </div>
+              </div>
+              <div class="filterSelectors filterSelector2" id="filterSelector2">
+                <select name="select1">
+                  <option value="none" hidden="">Select 1</option>
+                  <option value="value1">Значение 1</option>
+                  <option value="value2">Значение 2</option>
+                  <option value="value3">Значение 3</option>
+                </select>
+                <select name="select2">
+                  <option value="none" hidden="">Select 2</option>
+                  <option value="value1">Значение 1</option>
+                  <option value="value2">Значение 2</option>
+                  <option value="value3">Значение 3</option>
+                </select>
+                <select name="select3">
+                  <option value="none" hidden="">Select 3</option>
+                  <option value="value1">Значение 1</option>
+                  <option value="value2">Значение 2</option>
+                  <option value="value3">Значение 3</option>
+                </select>
+                <select name="select4">
+                  <option value="none" hidden="">Select 4</option>
+                  <option value="value1">Значение 1</option>
+                  <option value="value2">Значение 2</option>
+                  <option value="value3">Значение 3</option>
+                </select>
+                <div class="empty"></div>
+                <select name="select5">
+                  <option value="none" hidden="">Select 5</option>
+                  <option value="value1">Значение 1</option>
+                  <option value="value2">Значение 2</option>
+                  <option value="value3">Значение 3</option>
+                </select>
+                <div class="cost">
+                  <span>Цена</span>
+                  <input type="text" placeholder="50" />
+                  <input type="text" placeholder="250000" />
+                </div>
+                <div class="empty"></div>
+              </div>
+              <div class="control">
+                <input
+                  type="reset"
+                  class="resetFilter"
+                  value=" Очистить фильтр"
+                />
+                <img src="img/navigation/×.png" alt="×" />
+                <button type="submit" class="startFilter">
+                  ПРИМЕНИТЬ ФИЛЬТР
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="mainHeader">
+        <h1>Карточки товаров</h1>
+        <a href=""
+          >Ссылка в каталог <img src="img/main/orangeArrow.png" alt="->"
+        /></a>
+      </div>
+      <div class="products">
+        <div class="product">
+          <div class="productTop">
+            <p class="mark">Mark</p>
+            <a href="" class="name"
+              >Антифриз Fosser Antifreeze <br />
+              FA 12 Readymix 1 л Concentrat, Germany</a
+            >
+            <div class="rates">
+              <div class="stars">
+                <img src="img/main/orangeStar.png" alt="star" class="star" />
+                <img src="img/main/orangeStar.png" alt="star" class="star" />
+                <img src="img/main/orangeStar.png" alt="star" class="star" />
+                <img src="img/main/orangeStar.png" alt="star" class="star" />
+                <img src="img/main/orangeStar.png" alt="star" class="star" />
+              </div>
+              <a href="">Отзывы (10)</a>
+              <span class="amount">В наличии: 24 шт.</span>
+            </div>
+          </div>
+          <div class="productImg">
+            <div class="flagLeft">
+              <img src="img/main/sun.png" alt="sun" />
+              <span class="flagSpan">ЛЕТНЯЯ</span>
+              <img src="img/main/car.png" alt="car" />
+              <span class="flagSpan">ЛЕГКОВАЯ</span>
+              <img src="img/main/new.png" alt="new" />
+              <span class="flagSpan">НОВАЯ</span>
+            </div>
+            <div class="wheelImg wheelImg1"></div>
+            <div class="flagBtm">
+              <p class="flagBtmSpan">НОВИНКА</p>
+              <p class="flagBtmSpan">ХИТ</p>
+              <p class="flagBtmSpan">СКИДКА</p>
+            </div>
+          </div>
+          <div class="buyPrice">
+            <div class="price">
+              <span>599 грн.</span>
+              <span>1 250 грн.</span>
+            </div>
+            <div class="buyProductOuter">
+              <a href="" class="buyProduct">
+                <div class="buyProductHover"></div>
+                <img src="img/main/cart.png" alt="cart" />купить товар
+              </a>
+            </div>
+            <div class="compAndFav">
+              <a href="" class="productCompare">
+                <img src="img/main/compare.png" alt="compare" />Сравнить товар
+              </a>
+              <a href="" class="productFav">
+                <img src="img/main/star.png" alt="favorite" />В избранное
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="productTop">
+            <p class="mark">Mark</p>
+            <a href="" class="name"
+              >Антифриз Fosser Antifreeze <br />
+              FA 12 Readymix 1 л Concentrat, Germany</a
+            >
+            <div class="rates">
+              <div class="stars">
+                <img src="img/main/orangeStar.png" alt="star" class="star" />
+                <img src="img/main/orangeStar.png" alt="star" class="star" />
+                <img src="img/main/orangeStar.png" alt="star" class="star" />
+                <img src="img/main/grayStar.png" alt="0" class="star" />
+                <img src="img/main/grayStar.png" alt="0" class="star" />
+              </div>
+              <a href="">Отзывы (10)</a>
+              <span class="amount">В наличии: 24 шт.</span>
+            </div>
+          </div>
+          <div class="productImg">
+            <div class="flagLeft">
+              <img src="img/main/sun.png" alt="sun" />
+              <span class="flagSpan">ЛЕТНЯЯ</span>
+              <img src="img/main/new.png" alt="new" />
+              <span class="flagSpan">НОВАЯ</span>
+            </div>
+            <div class="wheelImg wheelImg2"></div>
+            <div class="flagBtm">
+              <p class="flagBtmSpan">НОВИНКА</p>
+              <p class="flagBtmSpan">ХИТ</p>
+            </div>
+          </div>
+          <div class="buyPrice">
+            <div class="price">
+              <span>599 грн.</span>
+              <span>1 250 грн.</span>
+            </div>
+            <div class="buyProductOuter">
+              <a href="" class="buyProduct">
+                <div class="buyProductHover"></div>
+                <img src="img/main/cart.png" alt="cart" />купить товар
+              </a>
+            </div>
+            <div class="compAndFav">
+              <a href="" class="productCompare">
+                <img src="img/main/compare.png" alt="compare" />Сравнить товар
+              </a>
+              <a href="" class="productFav">
+                <img src="img/main/star.png" alt="favorite" />В избранное
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="productTop">
+            <p class="mark">Mark</p>
+            <a href="" class="name">
+              Антифриз Fosser Antifreeze <br />
+              FA 12 Readymix 1 л Concentrat, Germany</a
+            >
+            <div class="rates">
+              <div class="stars">
+                <img src="img/main/grayStar.png" alt="0" class="star" />
+                <img src="img/main/grayStar.png" alt="0" class="star" />
+                <img src="img/main/grayStar.png" alt="0" class="star" />
+                <img src="img/main/grayStar.png" alt="0" class="star" />
+                <img src="img/main/grayStar.png" alt="0" class="star" />
+              </div>
+              <a href="">Без отзывов</a>
+              <span class="amount">В наличии: 24 шт.</span>
+            </div>
+          </div>
+          <div class="productImg">
+            <div class="flagLeft">
+              <img src="img/main/sun.png" alt="sun" />
+              <span class="flagSpan">ЛЕТНЯЯ</span>
+              <img src="img/main/car.png" alt="car" />
+              <span class="flagSpan">ЛЕГКОВАЯ</span>
+              <img src="img/main/new.png" alt="new" />
+              <span class="flagSpan">НОВАЯ</span>
+            </div>
+            <div class="wheelImg wheelImg3"></div>
+            <div class="flagBtm">
+              <p class="flagBtmSpan">НОВИНКА</p>
+            </div>
+          </div>
+          <div class="buyPrice">
+            <div class="price">
+              <span>9 570 грн.</span>
+              <span>11 250 грн.</span>
+            </div>
+            <div class="buyProductOuter">
+              <a href="" class="buyProduct">
+                <div class="buyProductHover"></div>
+                <img src="img/main/cart.png" alt="cart" />купить товар
+              </a>
+            </div>
+            <div class="compAndFav">
+              <a href="" class="productCompare">
+                <img src="img/main/compare.png" alt="compare" />Cравнить товар
+              </a>
+              <a href="" class="productFav">
+                <img src="img/main/star.png" alt="favorite" />В избранное
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="productTop">
+            <p class="mark">Mark</p>
+            <a href="" class="name">Антифриз Fosser Antifreeze <br /><br /></a>
+            <div class="rates">
+              <div class="stars">
+                <img src="img/main/orangeStar.png" alt="star" class="star" />
+                <img src="img/main/orangeStar.png" alt="star" class="star" />
+                <img src="img/main/orangeStar.png" alt="star" class="star" />
+                <img src="img/main/orangeStar.png" alt="star" class="star" />
+                <img src="img/main/orangeStar.png" alt="star" class="star" />
+              </div>
+              <a href="">Отзывы (10)</a>
+              <span class="amount">В наличии: 24 шт.</span>
+            </div>
+          </div>
+          <div class="productImg">
+            <div class="flagLeft">
+              <img src="img/main/sun.png" alt="sun" />
+              <span class="flagSpan">ЛЕТНЯЯ</span>
+              <img src="img/main/car.png" alt="car" />
+              <span class="flagSpan">ЛЕГКОВАЯ</span>
+            </div>
+            <div class="wheelImg wheelImg4"></div>
+            <div class="flagBtm"></div>
+          </div>
+          <div class="buyPrice">
+            <div class="price">
+              <span>599 грн.</span>
+              <span></span>
+            </div>
+            <div class="buyProductOuter">
+              <a href="" class="buyProduct">
+                <div class="buyProductHover"></div>
+                <img src="img/main/cart.png" alt="cart" />
+                купить товар</a
+              >
+            </div>
+            <div class="compAndFav">
+              <a href="" class="productCompare">
+                <img src="img/main/compare.png" alt="compare" />Сравнить товар
+              </a>
+              <a href="" class="productFav">
+                <img src="img/main/star.png" alt="favorite" />В избранное
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="footerOuter">
+      <footer>
+        <div class="ftrBlocks">
+          <div class="emailOuter">
+            <span class="capture1">Блок 1</span>
+            <div class="email">
+              <span>Будьте в курсе новостей и новинок!</span>
+              <span>Подписывайтесь на рассылку</span>
+              <form>
+                <input
+                  type="email"
+                  placeholder="Укажите свой email для подписки"
+                />
+                <button type="submit">ПОДПИСАТЬСЯ</button>
+              </form>
+            </div>
+          </div>
+          <div class="linksOuter">
+            <div class="linkBlocks">
+              <span class="capture">Блок ссылок 1</span>
+              <div class="links">
+                <a href="">Ссылка 1</a>
+                <a href="">Ссылка 2</a>
+                <a href="">Ссылка 3</a>
+                <a href="">Ссылка 4</a>
+              </div>
+            </div>
+            <div class="linkBlocks">
+              <span class="capture">Блок ссылок 2</span>
+              <div class="links">
+                <a href="">Ссылка 1</a>
+                <a href="">Ссылка 2</a>
+                <a href="">Ссылка 3</a>
+                <a href="">Ссылка 4</a>
+              </div>
+            </div>
+            <div class="linkBlocks">
+              <span class="capture">Блок ссылок 3</span>
+              <div class="links">
+                <a href="">Ссылка 1</a>
+                <a href="">Ссылка 2</a>
+                <a href="">Ссылка 3</a>
+                <a href="">Ссылка 4</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ftrBlocks2">
+          <div class="logoFooter">
+            <img src="img/footer/test.png" alt="TEST" />
+            <span>© Copyrith 2017. Тестовое задание Wezom</span>
+          </div>
+          <div class="socialOuter">
+            <div class="social">
+              <a class="socialLink" href="">
+                <img src='img/footer/soclink1.png' class="ftrLink ftrLink1">
+              </a>
+              <a class="socialLink" href="">
+                <img src='img/footer/soclink2.png' class="ftrLink ftrLink2">
+              </a>
+              <a class="socialLink" href="">
+                <img src='img/footer/soclink3.png' class="ftrLink ftrLink3">
+              </a>
+              <a class="socialLink" href="">
+                <img src='img/footer/soclink4.png' class="ftrLink ftrLink4">
+              </a>
+            </div>
+            <div class="author">
+              <div>
+                <img src="img/footer/w.png" alt="w" />
+              </div>
+              <div>
+                <span>Разработка тестового</span><br />
+                <span>Wezom Agency</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script defer src="script.js"></script>
+  </body>
+</html>

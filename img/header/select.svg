@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 5" width="6" height="5">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #8c8c8c } 
+	</style>
+	<g id="top">
+		<g id="search">
+			<path id="arrow" class="shp0" d="M3 5L0 0L6 0L3 5" />
+		</g>
+	</g>
+</svg>
